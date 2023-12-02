@@ -3,20 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "splitthebill", "splitthebill\splitthebill.csproj", "{847525B3-9263-4A48-996C-B1D2D6536736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "splitthebill", "splitthebill\splitthebill.csproj", "{847525B3-9263-4A48-996C-B1D2D6536736}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "splitthebill.test", "SplitTheBill.test\splitthebill.test.csproj", "{3904AD92-F09E-43FF-9044-B8B72B268865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{847525B3-9263-4A48-996C-B1D2D6536736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{847525B3-9263-4A48-996C-B1D2D6536736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847525B3-9263-4A48-996C-B1D2D6536736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847525B3-9263-4A48-996C-B1D2D6536736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3904AD92-F09E-43FF-9044-B8B72B268865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3904AD92-F09E-43FF-9044-B8B72B268865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3904AD92-F09E-43FF-9044-B8B72B268865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3904AD92-F09E-43FF-9044-B8B72B268865}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA08BBE9-80D7-49B1-B3D7-214926D15AE4}
 	EndGlobalSection
 EndGlobal

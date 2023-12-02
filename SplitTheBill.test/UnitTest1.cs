@@ -1,10 +1,45 @@
-namespace splitthebill.test;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SplitTheBill;
 
-[TestClass]
-public class UnitTest1
+namespace splitthebill.test
 {
-    [TestMethod]
-    public void TestMethod1()
+    [TestClass]
+    public class BillSplitterTests
     {
+        [TestMethod]
+        public void TestSplitAmount()
+        {
+            // Arrange
+            decimal amount = 100.00m;
+            int numberOfPeople = 5;
+
+            // Act
+            decimal result = BillSplitter.SplitAmount(amount, numberOfPeople);
+
+            // Assert
+            Assert.AreEqual(20.00m, result);
+        }
+
+        [TestMethod]
+        public void TestSplitAmountWithZeroPeople()
+        {
+            // Arrange
+            decimal amount = 100.00m;
+            int numberOfPeople = 0;
+
+            // Act and Assert
+            Assert.ThrowsException<ArgumentException>(() => BillSplitter.SplitAmount(amount, numberOfPeople));
+        }
+
+        [TestMethod]
+        public void TestSplitAmountWithNegativePeople()
+        {
+            // Arrange
+            decimal amount = 100.00m;
+            int numberOfPeople = -2;
+
+            // Act and Assert
+            Assert.ThrowsException<ArgumentException>(() => BillSplitter.SplitAmount(amount, numberOfPeople));
+        }
     }
 }

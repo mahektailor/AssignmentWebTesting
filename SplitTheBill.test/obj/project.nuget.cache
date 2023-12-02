@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IWGrU799Boa0JfYzN3Uf/G6aafrJJZTQxF4BYVLWE2pCoHdgpa+Hzssm6+yV5+evLrjnwpFYZOyEsbfnrxc6Eg==",
+  "dgSpecHash": "vasxUAFI2o1uryIW79IJJDWxVDqLx6cKLssVdDrdj5u6liDqOj+34seyoZYM5M9YJVevWnYXhn8oBbrwOqvkFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mahek\\OneDrive\\Documents\\GitHub\\AssignmentWebTesting\\splitthebill.test\\splitthebill.test.csproj",
+  "projectFilePath": "C:\\Users\\mahek\\OneDrive\\Documents\\GitHub\\AssignmentWebTesting\\SplitTheBill.test\\splitthebill.test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahek\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\mahek\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",

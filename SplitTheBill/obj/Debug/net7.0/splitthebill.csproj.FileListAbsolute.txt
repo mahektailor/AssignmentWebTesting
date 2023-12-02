@@ -1,0 +1,11 @@
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\bin\Debug\net7.0\splitthebill.deps.json
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\bin\Debug\net7.0\splitthebill.dll
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\bin\Debug\net7.0\splitthebill.pdb
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\splitthebill.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\splitthebill.AssemblyInfoInputs.cache
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\splitthebill.AssemblyInfo.cs
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\splitthebill.csproj.CoreCompileInputs.cache
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\splitthebill.dll
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\refint\splitthebill.dll
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\splitthebill.pdb
+c:\Users\mahek\OneDrive\Documents\GitHub\AssignmentWebTesting\splitthebill\obj\Debug\net7.0\ref\splitthebill.dll
