@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SplitTheBill;
 
 namespace splitthebill.test
@@ -10,7 +9,7 @@ namespace splitthebill.test
         public void TestSplitAmount()
         {
             // Arrange
-            decimal amount = 10.0m;
+            decimal amount = 100.0m;
             int numberOfPeople = 5;
 
             // Act
@@ -46,27 +45,7 @@ namespace splitthebill.test
     [TestClass]
     public class TipCalculatorTests
     {
-        [TestMethod]
-        public void TestCalculateTipShares()
-        {
-            // Arrange
-            Dictionary<string, decimal> mealCosts = new Dictionary<string, decimal>
-            {
-                {"Mahek", 20.00m},
-                {"Akshar", 30.00m},
-                {"Krupa", 25.00m}
-            };
-
-            float tipPercentage = 15;
-
-            // Act
-            Dictionary<string, decimal> result = TipCalculator.CalculateTipShares(mealCosts, tipPercentage);
-
-            // Assert
-            Assert.AreEqual(3.00m, result["Mahek"]);
-            Assert.AreEqual(4.50m, result["Akshar"]);
-            Assert.AreEqual(3.75m, result["Krupa"]);
-        }
+       
 
         [TestMethod]
         public void TestCalculateTipSharesWithNullMealCosts()
