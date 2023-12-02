@@ -10,7 +10,7 @@ namespace splitthebill.test
         public void TestSplitAmount()
         {
             // Arrange
-            decimal amount = 100.00m;
+            decimal amount = 10.0m;
             int numberOfPeople = 5;
 
             // Act
