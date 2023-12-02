@@ -97,7 +97,48 @@ namespace splitthebill.test
     }
 
 
+    [TestClass]
+    public class ExpenseManagerTests
+    {
+        [TestMethod]
+        public void TestCalculateTipPerPerson()
+        {
+            // Arrange
+            decimal price = 100.00m;
+            int numberOfPatrons = 5;
+            float tipPercentage = 15;
 
+            // Act
+            decimal result = ExpenseManager.CalculateTipPerPerson(price, numberOfPatrons, tipPercentage);
+
+            // Assert
+            Assert.AreEqual(3.00m, result);
+        }
+
+        [TestMethod]
+        public void TestCalculateTipPerPersonWithZeroPatrons()
+        {
+            // Arrange
+            decimal price = 100.00m;
+            int numberOfPatrons = 0;
+            float tipPercentage = 15;
+
+            // Act and Assert
+            Assert.ThrowsException<ArgumentException>(() => ExpenseManager.CalculateTipPerPerson(price, numberOfPatrons, tipPercentage));
+        }
+
+        [TestMethod]
+        public void TestCalculateTipPerPersonWithInvalidTipPercentage()
+        {
+            // Arrange
+            decimal price = 100.00m;
+            int numberOfPatrons = 5;
+            float tipPercentage = -5;
+
+            // Act and Assert
+            Assert.ThrowsException<ArgumentException>(() => ExpenseManager.CalculateTipPerPerson(price, numberOfPatrons, tipPercentage));
+        }
+    }
 
 
 }
