@@ -47,4 +47,46 @@ namespace SplitTheBill
             return tipShares;
         }
     }
+
+    public class SplitTheBillCalculator
+    {
+        public static decimal CalculateTipPerPerson(decimal price, int numberOfPatrons, float tipPercentage)
+        {
+            if (numberOfPatrons <= 0)
+            {
+                throw new ArgumentException("Number of patrons must be greater than 0.", nameof(numberOfPatrons));
+            }
+
+            if (tipPercentage < 0 || tipPercentage > 100)
+            {
+                throw new ArgumentException("Tip percentage must be between 0 and 100.", nameof(tipPercentage));
+            }
+
+            decimal totalTip = price * (decimal)tipPercentage / 100;
+            decimal tipPerPerson = totalTip / numberOfPatrons;
+
+            return tipPerPerson;
+        }
+    }
+    public class ExpenseManager
+    {
+        public static decimal CalculateTipPerPerson(decimal price, int numberOfPatrons, float tipPercentage)
+        {
+            if (numberOfPatrons <= 0)
+            {
+                throw new ArgumentException("Number of patrons must be greater than 0.", nameof(numberOfPatrons));
+            }
+
+            if (tipPercentage < 0 || tipPercentage > 100)
+            {
+                throw new ArgumentException("Tip percentage must be between 0 and 100.", nameof(tipPercentage));
+            }
+
+            decimal totalTip = price * (decimal)tipPercentage / 100;
+            decimal tipPerPerson = totalTip / numberOfPatrons;
+
+            return tipPerPerson;
+        }
+    }
+
 }
